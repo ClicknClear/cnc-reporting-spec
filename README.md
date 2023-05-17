@@ -36,6 +36,7 @@ For example:
 - `P,T,..` - Publishing Totals Row
 - `P,S,..` - Publishing Sales Row
 
+
 ## Total Row
 
 The Total Row (T) has the same values for every Income Type and is as follows:
@@ -50,3 +51,16 @@ Raw example:
 ```
 T,P,2023-01-01T00:00:00.000Z,2023-03-31T22:59:59.000Z,3.0000,USD,0.0000,288.5417,288.54
 ```
+
+## Sales Row - Master
+
+The values for [Row Type](#row-type) Sales (S) for [Income Type](#row-type) Master (M) is as follows:
+
+|             | Row Type                               | Income Type                                            | Date Of Sale                              | Licensee Name                                                     |  Title                               | Performed By                                                          | ISRC                                    | UPC                                    | Label                                     | Territory Licensed                       | Territory Licensed                       | Territory Licensed                       | Territory Licensed                       | Territory Licensed                       | Territory Licensed                        | Territory Licensed                        | Territory Licensed                        | Territory Licensed                        | Territory Licensed
+| --------    | ----------                             | ----------                                             | ----------                                | ----------                                                        | ----------                           | ----------                                                            | ----------                              | ----------                             | ----------                                | ----------                               | ----------                               | ----------                               | ----------                               | ----------                               | ----------                                | ----------                                | ----------                                | ----------                                | ----------
+| Type        | [RowType](#row-type)                   | [IncomeType](#income-type)                             | ISO Date                                  | String                                                            | String                               | String                                                                | String                                  | String                                 | String                                    | ISO 3166 Territory Code                  | ISO 3166 Territory Code                  | ISO 3166 Territory Code                  | ISO 3166 Territory Code                  | ISO 3166 Territory Code                  | ISO 3166 Territory Code                   | ISO 3166 Territory Code                   | ISO 3166 Territory Code                   | ISO 3166 Territory Code                   | ISO 3166 Territory Code
+| Description | The [Row Type](#row-type)  of this row | The [Income Type](#income-type) this total row is for. | The date and time the sale was completed. | The full name of the licensee (team/individual) this sale is for. | The title of track this sale is for. | Comma Separated List of the performers of the track this sale is for. | The ISRC of the track this sale is for. | The UPC of the track this sale is for. | The Name of the label this track is for.  | The Territory licensed this sale is for. | The Territory licensed this sale is for. | The Territory licensed this sale is for. | The Territory licensed this sale is for. | The Territory licensed this sale is for. | The Territory licensed this sale is for.  | The Territory licensed this sale is for.  | The Territory licensed this sale is for.  | The Territory licensed this sale is for.  | The Territory licensed this sale is for.
+| Example     | S                                      | M                                                      | 2023-01-01T00:00:00.000Z                  | Tristan Barlow-Griffin                                            | Track Title                          | Artist 1, Artist 2                                                    | USRC17607839                            | 00123456789012                         | Music Label                               | US                                       | US                                       | US                                       | US                                       | US                                       | US                                        | US                                        | US                                        | US                                        | US
+
+
+## Sales Row - Publishing
