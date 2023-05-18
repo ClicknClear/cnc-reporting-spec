@@ -1,4 +1,10 @@
 # ClicknClear Royalty Reporting Specification
+The following readme outlines the standard ClicknClear royalty reporting output which is available to all Rightsholders upon request.
+All rows (outlined below) will be combined into a single .csv which is currently sent via email.
+An example csv file called TEST_RIGHTSHOLDER_STANDARD_Q1_2023.csv can be found in this repo.
+
+If you need any assistance with the implementation of this specification please contact [techteam@clicknclear.com](mailto:techteam@clicknclear.com).
+For general royalty reporting queries please contact [royalty-reporting@clicknclear.com](mailto:royalty-reporting@clicknclear.com).
 
 ## Row Type
 The first column for each row denotes the Row Type of row it is. The possible row types are as follows:
@@ -78,4 +84,16 @@ The values for [Row Type](#row-type) Sales (S) for [Income Type](#row-type) Publ
 Raw example:
 ```
 S,P,2023-01-01T00:00:00.000Z,Tristan Barlow-Griffin,Work Title,"Performer 1, Performer 2, Performer 3","Writer 1, Writer 2",T3452468001,US,USD,25.0000,0.0000,4.1666,20.8333,10.4166,50.00,5.2083,70.00,3.6458
+```
+
+
+## Full File Example
+```
+T,M,2023-01-01T00:00:00.000Z,2023-03-31T23:59:59.999Z,2,USD,100.0000,14.5832,114.58
+S,M,2023-01-01T00:00:00.000Z,Tristan Barlow-Griffin,Track Title,"Artist 1, Artist 2",USRC17607839,00123456789012,Music Label,US,USD,25.0000,0.0000,4.1666,20.8333,10.4166,70.00,7.2916
+S,M,2023-01-01T00:00:00.000Z,Tristan Garlow-Briffin,Track Title,Artist 1,USRC17607839,00123456789012,Music Label,US,USD,25.0000,0.0000,4.1666,20.8333,10.4166,70.00,7.2916
+T,P,2023-01-01T00:00:00.000Z,2023-03-31T23:59:59.999Z,2,USD,50.0000,7.2916,57.29
+S,P,2023-01-01T00:00:00.000Z,Tristan Barlow-Griffin,Work Title,"Performer 1, Performer 2, Performer 3","Writer 1, Writer 2",T3452468001,US,USD,25.0000,0.0000,4.1666,20.8333,10.4166,50.00,5.2083,70.00,3.6458
+S,P,2023-01-01T00:00:00.000Z,Tristan Garlow-Briffin,Work Title,Artist 1,"Writer 1, Writer 2",T3452468001,US,USD,25.0000,0.0000,4.1666,20.8333,10.4166,50.00,5.2083,70.00,3.6458
+
 ```
